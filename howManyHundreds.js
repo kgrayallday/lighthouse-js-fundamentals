@@ -1,4 +1,8 @@
-// need to make function that test how many times a given number devides into 100 using modulo 
- const howManyHundreds = function (num) {
-  return num % 1
+var howManyHundreds = function (num) {
+  var answer = (num - (num % 100)) / 100;
+  return answer;
 }
+
+console.log("should equal 5: " + howManyHundreds(520));
+
+
