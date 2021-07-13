@@ -1,5 +1,5 @@
 var calculateRectangleArea = function (length, width) {
-  if (length * width < 0) {
+  if (length < 0 || width < 0) {
     return;
   } else {
     return length * width;
@@ -8,7 +8,7 @@ var calculateRectangleArea = function (length, width) {
 
 var calculateTriangleArea = function (base, height) {
   //base X height /2
-  if (base * height / 2 < 0) {
+  if (base < 0 || height < 0) {
     return;
   } else {
     return base * height / 2;
@@ -18,7 +18,7 @@ var calculateTriangleArea = function (base, height) {
 
 var calculateCircleArea = function (radius) {
   //use Math.pi
-  if (Math.PI * (radius * radius) < 0) {
+  if (radius < 0) {
     return;
   } else {
     return Math.PI * (radius * radius);
